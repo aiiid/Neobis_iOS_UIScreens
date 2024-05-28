@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0BA1E097F9B29254ED2B60E /* Pods_Neobis_iOS_UIScreens.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F19B059ECC21946FA55F71F /* Pods_Neobis_iOS_UIScreens.framework */; };
+		E238F68A2BFF6F7400A169D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F6892BFF6F7400A169D5 /* AppDelegate.swift */; };
+		E238F68C2BFF6F7400A169D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F68B2BFF6F7400A169D5 /* SceneDelegate.swift */; };
+		E238F68E2BFF6F7400A169D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F68D2BFF6F7400A169D5 /* ViewController.swift */; };
+		E238F6932BFF6F7600A169D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E238F6922BFF6F7600A169D5 /* Assets.xcassets */; };
+		E238F6962BFF6F7600A169D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E238F6942BFF6F7600A169D5 /* LaunchScreen.storyboard */; };
+		E238F69E2C05B3ED00A169D5 /* ScreensTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F69D2C05B3ED00A169D5 /* ScreensTabBarController.swift */; };
+		E238F6A32C05B46B00A169D5 /* SinglesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F6A22C05B46B00A169D5 /* SinglesViewController.swift */; };
+		E238F6A52C05B48C00A169D5 /* TravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F6A42C05B48C00A169D5 /* TravelViewController.swift */; };
+		E238F6A72C05B49800A169D5 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F6A62C05B49800A169D5 /* PortfolioViewController.swift */; };
+		E238F6A92C05B5F300A169D5 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F6A82C05B5F300A169D5 /* WalletViewController.swift */; };
+		E238F6AB2C05B60100A169D5 /* WeatherAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F6AA2C05B60100A169D5 /* WeatherAppViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F19B059ECC21946FA55F71F /* Pods_Neobis_iOS_UIScreens.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neobis_iOS_UIScreens.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3899A672313300E75D774119 /* Pods-Neobis_iOS_UIScreens.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_UIScreens.release.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_UIScreens/Pods-Neobis_iOS_UIScreens.release.xcconfig"; sourceTree = "<group>"; };
+		D261DCB63E4ACE64B2AED66D /* Pods-Neobis_iOS_UIScreens.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_UIScreens.debug.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_UIScreens/Pods-Neobis_iOS_UIScreens.debug.xcconfig"; sourceTree = "<group>"; };
+		E238F6862BFF6F7400A169D5 /* Neobis_iOS_UIScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neobis_iOS_UIScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E238F6892BFF6F7400A169D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E238F68B2BFF6F7400A169D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E238F68D2BFF6F7400A169D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E238F6922BFF6F7600A169D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E238F6952BFF6F7600A169D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E238F6972BFF6F7600A169D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E238F69D2C05B3ED00A169D5 /* ScreensTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreensTabBarController.swift; sourceTree = "<group>"; };
+		E238F6A22C05B46B00A169D5 /* SinglesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglesViewController.swift; sourceTree = "<group>"; };
+		E238F6A42C05B48C00A169D5 /* TravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelViewController.swift; sourceTree = "<group>"; };
+		E238F6A62C05B49800A169D5 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
+		E238F6A82C05B5F300A169D5 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		E238F6AA2C05B60100A169D5 /* WeatherAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E238F6832BFF6F7400A169D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0BA1E097F9B29254ED2B60E /* Pods_Neobis_iOS_UIScreens.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10B22F30F7EA70D8D9F95302 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F19B059ECC21946FA55F71F /* Pods_Neobis_iOS_UIScreens.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D4BEB7BCB0BD51D0E1B74D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D261DCB63E4ACE64B2AED66D /* Pods-Neobis_iOS_UIScreens.debug.xcconfig */,
+				3899A672313300E75D774119 /* Pods-Neobis_iOS_UIScreens.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E238F67D2BFF6F7300A169D5 = {
+			isa = PBXGroup;
+			children = (
+				E238F6882BFF6F7400A169D5 /* Neobis_iOS_UIScreens */,
+				E238F6872BFF6F7400A169D5 /* Products */,
+				7D4BEB7BCB0BD51D0E1B74D5 /* Pods */,
+				10B22F30F7EA70D8D9F95302 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E238F6872BFF6F7400A169D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E238F6862BFF6F7400A169D5 /* Neobis_iOS_UIScreens.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E238F6882BFF6F7400A169D5 /* Neobis_iOS_UIScreens */ = {
+			isa = PBXGroup;
+			children = (
+				E238F69F2C05B3FC00A169D5 /* Custom */,
+				E238F6892BFF6F7400A169D5 /* AppDelegate.swift */,
+				E238F68B2BFF6F7400A169D5 /* SceneDelegate.swift */,
+				E238F68D2BFF6F7400A169D5 /* ViewController.swift */,
+				E238F6922BFF6F7600A169D5 /* Assets.xcassets */,
+				E238F6942BFF6F7600A169D5 /* LaunchScreen.storyboard */,
+				E238F6972BFF6F7600A169D5 /* Info.plist */,
+			);
+			path = Neobis_iOS_UIScreens;
+			sourceTree = "<group>";
+		};
+		E238F69F2C05B3FC00A169D5 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				E238F6A12C05B40C00A169D5 /* ViewController */,
+				E238F6A02C05B40400A169D5 /* TabBarController */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		E238F6A02C05B40400A169D5 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				E238F69D2C05B3ED00A169D5 /* ScreensTabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		E238F6A12C05B40C00A169D5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E238F6A22C05B46B00A169D5 /* SinglesViewController.swift */,
+				E238F6A42C05B48C00A169D5 /* TravelViewController.swift */,
+				E238F6A62C05B49800A169D5 /* PortfolioViewController.swift */,
+				E238F6A82C05B5F300A169D5 /* WalletViewController.swift */,
+				E238F6AA2C05B60100A169D5 /* WeatherAppViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E238F6852BFF6F7400A169D5 /* Neobis_iOS_UIScreens */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E238F69A2BFF6F7600A169D5 /* Build configuration list for PBXNativeTarget "Neobis_iOS_UIScreens" */;
+			buildPhases = (
+				8323862AF687C92F1E11BD9C /* [CP] Check Pods Manifest.lock */,
+				E238F6822BFF6F7400A169D5 /* Sources */,
+				E238F6832BFF6F7400A169D5 /* Frameworks */,
+				E238F6842BFF6F7400A169D5 /* Resources */,
+				5EBAAA5DDAF11BB49265800E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Neobis_iOS_UIScreens;
+			productName = Neobis_iOS_UIScreens;
+			productReference = E238F6862BFF6F7400A169D5 /* Neobis_iOS_UIScreens.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E238F67E2BFF6F7300A169D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					E238F6852BFF6F7400A169D5 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = E238F6812BFF6F7300A169D5 /* Build configuration list for PBXProject "Neobis_iOS_UIScreens" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E238F67D2BFF6F7300A169D5;
+			productRefGroup = E238F6872BFF6F7400A169D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E238F6852BFF6F7400A169D5 /* Neobis_iOS_UIScreens */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E238F6842BFF6F7400A169D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E238F6962BFF6F7600A169D5 /* LaunchScreen.storyboard in Resources */,
+				E238F6932BFF6F7600A169D5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EBAAA5DDAF11BB49265800E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Neobis_iOS_UIScreens/Pods-Neobis_iOS_UIScreens-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Neobis_iOS_UIScreens/Pods-Neobis_iOS_UIScreens-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Neobis_iOS_UIScreens/Pods-Neobis_iOS_UIScreens-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8323862AF687C92F1E11BD9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Neobis_iOS_UIScreens-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E238F6822BFF6F7400A169D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E238F6A52C05B48C00A169D5 /* TravelViewController.swift in Sources */,
+				E238F68E2BFF6F7400A169D5 /* ViewController.swift in Sources */,
+				E238F68A2BFF6F7400A169D5 /* AppDelegate.swift in Sources */,
+				E238F6A32C05B46B00A169D5 /* SinglesViewController.swift in Sources */,
+				E238F68C2BFF6F7400A169D5 /* SceneDelegate.swift in Sources */,
+				E238F6A92C05B5F300A169D5 /* WalletViewController.swift in Sources */,
+				E238F6A72C05B49800A169D5 /* PortfolioViewController.swift in Sources */,
+				E238F6AB2C05B60100A169D5 /* WeatherAppViewController.swift in Sources */,
+				E238F69E2C05B3ED00A169D5 /* ScreensTabBarController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E238F6942BFF6F7600A169D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E238F6952BFF6F7600A169D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E238F6982BFF6F7600A169D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E238F6992BFF6F7600A169D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E238F69B2BFF6F7600A169D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D261DCB63E4ACE64B2AED66D /* Pods-Neobis_iOS_UIScreens.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SD8XJ5V53F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Neobis_iOS_UIScreens/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Aida-Abdirakhman.Neobis-iOS-UIScreens";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E238F69C2BFF6F7600A169D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3899A672313300E75D774119 /* Pods-Neobis_iOS_UIScreens.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SD8XJ5V53F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Neobis_iOS_UIScreens/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Aida-Abdirakhman.Neobis-iOS-UIScreens";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E238F6812BFF6F7300A169D5 /* Build configuration list for PBXProject "Neobis_iOS_UIScreens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E238F6982BFF6F7600A169D5 /* Debug */,
+				E238F6992BFF6F7600A169D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E238F69A2BFF6F7600A169D5 /* Build configuration list for PBXNativeTarget "Neobis_iOS_UIScreens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E238F69B2BFF6F7600A169D5 /* Debug */,
+				E238F69C2BFF6F7600A169D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E238F67E2BFF6F7300A169D5 /* Project object */;
+}

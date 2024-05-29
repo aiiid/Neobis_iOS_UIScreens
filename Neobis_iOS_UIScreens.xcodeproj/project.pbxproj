@@ -19,6 +19,12 @@
 		E238F6A72C05B49800A169D5 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F6A62C05B49800A169D5 /* PortfolioViewController.swift */; };
 		E238F6A92C05B5F300A169D5 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F6A82C05B5F300A169D5 /* WalletViewController.swift */; };
 		E238F6AB2C05B60100A169D5 /* WeatherAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F6AA2C05B60100A169D5 /* WeatherAppViewController.swift */; };
+		E238F6B02C0736AA00A169D5 /* SinglesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F6AF2C0736AA00A169D5 /* SinglesTableViewController.swift */; };
+		E238F6B32C0736BF00A169D5 /* SinglesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F6B22C0736BF00A169D5 /* SinglesTableViewCell.swift */; };
+		E238F6B62C07373600A169D5 /* SinglesContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F6B52C07373600A169D5 /* SinglesContent.swift */; };
+		E238F6BB2C07A2CC00A169D5 /* TravelHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F6BA2C07A2CC00A169D5 /* TravelHeaderView.swift */; };
+		E238F6BE2C07A57F00A169D5 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F6BD2C07A57F00A169D5 /* CountryTableViewCell.swift */; };
+		E238F6C02C07A6CB00A169D5 /* CountriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F6BF2C07A6CB00A169D5 /* CountriesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,12 @@
 		E238F6A62C05B49800A169D5 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
 		E238F6A82C05B5F300A169D5 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		E238F6AA2C05B60100A169D5 /* WeatherAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppViewController.swift; sourceTree = "<group>"; };
+		E238F6AF2C0736AA00A169D5 /* SinglesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglesTableViewController.swift; sourceTree = "<group>"; };
+		E238F6B22C0736BF00A169D5 /* SinglesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglesTableViewCell.swift; sourceTree = "<group>"; };
+		E238F6B52C07373600A169D5 /* SinglesContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglesContent.swift; sourceTree = "<group>"; };
+		E238F6BA2C07A2CC00A169D5 /* TravelHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelHeaderView.swift; sourceTree = "<group>"; };
+		E238F6BD2C07A57F00A169D5 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		E238F6BF2C07A6CB00A169D5 /* CountriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +78,6 @@
 				D261DCB63E4ACE64B2AED66D /* Pods-Neobis_iOS_UIScreens.debug.xcconfig */,
 				3899A672313300E75D774119 /* Pods-Neobis_iOS_UIScreens.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -91,6 +102,7 @@
 		E238F6882BFF6F7400A169D5 /* Neobis_iOS_UIScreens */ = {
 			isa = PBXGroup;
 			children = (
+				E238F6B42C07371800A169D5 /* DataManager */,
 				E238F69F2C05B3FC00A169D5 /* Custom */,
 				E238F6892BFF6F7400A169D5 /* AppDelegate.swift */,
 				E238F68B2BFF6F7400A169D5 /* SceneDelegate.swift */,
@@ -105,6 +117,9 @@
 		E238F69F2C05B3FC00A169D5 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				E238F6B72C079EB200A169D5 /* Container */,
+				E238F6B12C0736AE00A169D5 /* Cell */,
+				E238F6AE2C07369800A169D5 /* TableView */,
 				E238F6A12C05B40C00A169D5 /* ViewController */,
 				E238F6A02C05B40400A169D5 /* TabBarController */,
 			);
@@ -131,6 +146,40 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		E238F6AE2C07369800A169D5 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				E238F6AF2C0736AA00A169D5 /* SinglesTableViewController.swift */,
+				E238F6BF2C07A6CB00A169D5 /* CountriesTableViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		E238F6B12C0736AE00A169D5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E238F6B22C0736BF00A169D5 /* SinglesTableViewCell.swift */,
+				E238F6BD2C07A57F00A169D5 /* CountryTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E238F6B42C07371800A169D5 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				E238F6B52C07373600A169D5 /* SinglesContent.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		E238F6B72C079EB200A169D5 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				E238F6BA2C07A2CC00A169D5 /* TravelHeaderView.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,11 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E238F69A2BFF6F7600A169D5 /* Build configuration list for PBXNativeTarget "Neobis_iOS_UIScreens" */;
 			buildPhases = (
+				E238F6AD2C071D4200A169D5 /* ShellScript */,
 				8323862AF687C92F1E11BD9C /* [CP] Check Pods Manifest.lock */,
 				E238F6822BFF6F7400A169D5 /* Sources */,
 				E238F6832BFF6F7400A169D5 /* Frameworks */,
 				E238F6842BFF6F7400A169D5 /* Resources */,
-				5EBAAA5DDAF11BB49265800E /* [CP] Embed Pods Frameworks */,
+				5894513AABBEE674450733CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,7 +249,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5EBAAA5DDAF11BB49265800E /* [CP] Embed Pods Frameworks */ = {
+		5894513AABBEE674450733CD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -238,6 +288,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E238F6AD2C071D4200A169D5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -247,13 +314,19 @@
 			files = (
 				E238F6A52C05B48C00A169D5 /* TravelViewController.swift in Sources */,
 				E238F68E2BFF6F7400A169D5 /* ViewController.swift in Sources */,
+				E238F6B02C0736AA00A169D5 /* SinglesTableViewController.swift in Sources */,
+				E238F6B32C0736BF00A169D5 /* SinglesTableViewCell.swift in Sources */,
 				E238F68A2BFF6F7400A169D5 /* AppDelegate.swift in Sources */,
 				E238F6A32C05B46B00A169D5 /* SinglesViewController.swift in Sources */,
 				E238F68C2BFF6F7400A169D5 /* SceneDelegate.swift in Sources */,
 				E238F6A92C05B5F300A169D5 /* WalletViewController.swift in Sources */,
+				E238F6BB2C07A2CC00A169D5 /* TravelHeaderView.swift in Sources */,
 				E238F6A72C05B49800A169D5 /* PortfolioViewController.swift in Sources */,
 				E238F6AB2C05B60100A169D5 /* WeatherAppViewController.swift in Sources */,
 				E238F69E2C05B3ED00A169D5 /* ScreensTabBarController.swift in Sources */,
+				E238F6BE2C07A57F00A169D5 /* CountryTableViewCell.swift in Sources */,
+				E238F6C02C07A6CB00A169D5 /* CountriesTableViewController.swift in Sources */,
+				E238F6B62C07373600A169D5 /* SinglesContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +472,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SD8XJ5V53F;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Neobis_iOS_UIScreens/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -427,6 +501,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SD8XJ5V53F;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Neobis_iOS_UIScreens/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

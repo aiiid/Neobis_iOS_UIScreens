@@ -8,22 +8,29 @@
 import UIKit
 
 class TravelViewController: UIViewController {
-
+    private let travelHeader = TravelHeaderView()
+    private let countryTableView = CountriesTableViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        configureUI()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func configureUI() {
+        view.backgroundColor = .systemBackground
+        
+        view.addSubview(travelHeader)
+        view.addSubview(countryTableView.view)
+        
+        travelHeader.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            make.leading.trailing.equalToSuperview()
+            make.height.equalTo(200)
+        }
+        
+        countryTableView.view.snp.makeConstraints { make in
+            make.top.equalTo(travelHeader.snp.bottom)
+            make.leading.trailing.bottom.equalToSuperview()
+        }
     }
-    */
-
 }

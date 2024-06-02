@@ -25,6 +25,10 @@
 		E238F6BB2C07A2CC00A169D5 /* TravelHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F6BA2C07A2CC00A169D5 /* TravelHeaderView.swift */; };
 		E238F6BE2C07A57F00A169D5 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F6BD2C07A57F00A169D5 /* CountryTableViewCell.swift */; };
 		E238F6C02C07A6CB00A169D5 /* CountriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238F6BF2C07A6CB00A169D5 /* CountriesTableViewController.swift */; };
+		E2901D012C083DB8008A0438 /* PortfolioAssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2901D002C083DB8008A0438 /* PortfolioAssetCell.swift */; };
+		E2901D032C0C5A32008A0438 /* PortfolioTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2901D022C0C5A32008A0438 /* PortfolioTableView.swift */; };
+		E2901D052C0C5D6C008A0438 /* CryptoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2901D042C0C5D6C008A0438 /* CryptoAsset.swift */; };
+		E2901D082C0CD9BA008A0438 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2901D072C0CD9BA008A0438 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		E238F6BA2C07A2CC00A169D5 /* TravelHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelHeaderView.swift; sourceTree = "<group>"; };
 		E238F6BD2C07A57F00A169D5 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		E238F6BF2C07A6CB00A169D5 /* CountriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewController.swift; sourceTree = "<group>"; };
+		E2901D002C083DB8008A0438 /* PortfolioAssetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioAssetCell.swift; sourceTree = "<group>"; };
+		E2901D022C0C5A32008A0438 /* PortfolioTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioTableView.swift; sourceTree = "<group>"; };
+		E2901D042C0C5D6C008A0438 /* CryptoAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAsset.swift; sourceTree = "<group>"; };
+		E2901D072C0CD9BA008A0438 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,7 @@
 		E238F6882BFF6F7400A169D5 /* Neobis_iOS_UIScreens */ = {
 			isa = PBXGroup;
 			children = (
+				E2901D062C0CD9AD008A0438 /* Utilities */,
 				E238F6B42C07371800A169D5 /* DataManager */,
 				E238F69F2C05B3FC00A169D5 /* Custom */,
 				E238F6892BFF6F7400A169D5 /* AppDelegate.swift */,
@@ -151,6 +160,7 @@
 			children = (
 				E238F6AF2C0736AA00A169D5 /* SinglesTableViewController.swift */,
 				E238F6BF2C07A6CB00A169D5 /* CountriesTableViewController.swift */,
+				E2901D022C0C5A32008A0438 /* PortfolioTableView.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -160,6 +170,7 @@
 			children = (
 				E238F6B22C0736BF00A169D5 /* SinglesTableViewCell.swift */,
 				E238F6BD2C07A57F00A169D5 /* CountryTableViewCell.swift */,
+				E2901D002C083DB8008A0438 /* PortfolioAssetCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -168,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				E238F6B52C07373600A169D5 /* SinglesContent.swift */,
+				E2901D042C0C5D6C008A0438 /* CryptoAsset.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -178,6 +190,14 @@
 				E238F6BA2C07A2CC00A169D5 /* TravelHeaderView.swift */,
 			);
 			path = Container;
+			sourceTree = "<group>";
+		};
+		E2901D062C0CD9AD008A0438 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E2901D072C0CD9BA008A0438 /* Extensions.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,16 +334,20 @@
 			files = (
 				E238F6A52C05B48C00A169D5 /* TravelViewController.swift in Sources */,
 				E238F68E2BFF6F7400A169D5 /* ViewController.swift in Sources */,
+				E2901D032C0C5A32008A0438 /* PortfolioTableView.swift in Sources */,
+				E2901D012C083DB8008A0438 /* PortfolioAssetCell.swift in Sources */,
 				E238F6B02C0736AA00A169D5 /* SinglesTableViewController.swift in Sources */,
 				E238F6B32C0736BF00A169D5 /* SinglesTableViewCell.swift in Sources */,
 				E238F68A2BFF6F7400A169D5 /* AppDelegate.swift in Sources */,
 				E238F6A32C05B46B00A169D5 /* SinglesViewController.swift in Sources */,
+				E2901D052C0C5D6C008A0438 /* CryptoAsset.swift in Sources */,
 				E238F68C2BFF6F7400A169D5 /* SceneDelegate.swift in Sources */,
 				E238F6A92C05B5F300A169D5 /* WalletViewController.swift in Sources */,
 				E238F6BB2C07A2CC00A169D5 /* TravelHeaderView.swift in Sources */,
 				E238F6A72C05B49800A169D5 /* PortfolioViewController.swift in Sources */,
 				E238F6AB2C05B60100A169D5 /* WeatherAppViewController.swift in Sources */,
 				E238F69E2C05B3ED00A169D5 /* ScreensTabBarController.swift in Sources */,
+				E2901D082C0CD9BA008A0438 /* Extensions.swift in Sources */,
 				E238F6BE2C07A57F00A169D5 /* CountryTableViewCell.swift in Sources */,
 				E238F6C02C07A6CB00A169D5 /* CountriesTableViewController.swift in Sources */,
 				E238F6B62C07373600A169D5 /* SinglesContent.swift in Sources */,

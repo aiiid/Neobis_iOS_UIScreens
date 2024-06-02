@@ -8,8 +8,8 @@
 import UIKit
 
 class CountriesTableViewController: UITableViewController {
-    private var countryList = ["Abu Dhabi", "San Antonio", "US"]
-    private var countryImages = ["AbuDhabi.png", "SanAntonio.png", "US.png"]
+    private var countryList = ["Abu Dhabi", "San Antonio", "Seoul"]
+    private var countryImages = ["AbuDhabi.png", "Rome.png", "Seoul.png"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

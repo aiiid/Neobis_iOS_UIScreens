@@ -16,9 +16,9 @@ class ScreensTabBarController: UITabBarController {
     
     private func configureTabs() {
         let singlesViewController = UINavigationController(rootViewController: SinglesViewController())
+        let portfolioViewController =  UINavigationController(rootViewController: PortfolioViewController())
         
         let travelViewController = TravelViewController()
-        let portfolioViewController = PortfolioViewController()
         let walletViewController = WalletViewController()
         let weatherAppViewController = WeatherAppViewController()
         
@@ -33,8 +33,6 @@ class ScreensTabBarController: UITabBarController {
         portfolioViewController.tabBarItem.title = "Portfolio"
         walletViewController.tabBarItem.title = "Wallet"
         weatherAppViewController.tabBarItem.title = "Weather"
-        
-        
         
         tabBar.tintColor = .magenta
         setViewControllers( [singlesViewController,

@@ -18,9 +18,11 @@ class ScreensTabBarController: UITabBarController {
         let singlesViewController = UINavigationController(rootViewController: SinglesViewController())
         let portfolioViewController =  UINavigationController(rootViewController: PortfolioViewController())
         
+        let weatherAppViewController =  UINavigationController(rootViewController: WeatherAppViewController())
+        
         let travelViewController = TravelViewController()
         let walletViewController = WalletViewController()
-        let weatherAppViewController = WeatherAppViewController()
+//        let weatherAppViewController = WeatherAppViewController()
         
         singlesViewController.tabBarItem.image = UIImage(named: "help.png")
         travelViewController.tabBarItem.image = UIImage(named: "travel.png")

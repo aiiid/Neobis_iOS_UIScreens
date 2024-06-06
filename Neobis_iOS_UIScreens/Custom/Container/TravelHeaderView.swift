@@ -34,11 +34,12 @@ class TravelHeaderView: UIView {
     private let searchBar: UISearchBar = {
         let searchBar = UISearchBar()
         searchBar.placeholder = "Куда хотите поехать?"
-        searchBar.layer.cornerRadius = 20 // Set corner radius
-        searchBar.barTintColor = .systemBlue // Background color of the search bar
-        searchBar.searchTextField.backgroundColor = .white // Background color of the text field
-        searchBar.searchTextField.textColor = .systemBlue
-        searchBar.searchTextField.tintColor = .systemBlue
+        searchBar.layer.cornerRadius = 20
+        searchBar.layer.backgroundColor = UIColor(named: "white")?.cgColor
+//        searchBar.barTintColor = .systemBlue // Background color of the search bar
+//        searchBar.searchTextField.backgroundColor = .white // Background color of the text field
+//        searchBar.searchTextField.textColor = .systemBlue
+//        searchBar.searchTextField.tintColor = .systemBlue
         return searchBar
     }()
     

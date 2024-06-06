@@ -12,31 +12,39 @@ class WeatherDetailsView: UIView {
     
     private var weatherState: WeatherState = .sunny
     
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        configureUI(for: .snowy, with: "15 km/h")
+        configureUI(for: nil, with: nil)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configureUI(for weather: WeatherState, with detail: String){
+    func configureUI(for weather: WeatherState?, with detail: String?) {
+        guard let weather = weather else { return }
+        
         let weatherLabel = UILabel()
+        
         weatherLabel.text = weather.description
-        weatherLabel.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+        weatherLabel.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        weatherLabel.textAlignment = .left
+        weatherLabel.textColor = .white
         
         let weatherIcon = UIImageView()
         weatherIcon.image = UIImage(systemName: weather.iconName)
-        weatherIcon.tintColor = .black
+        weatherIcon.tintColor = .white
+        weatherIcon.contentMode = .scaleAspectFit
         
         let weatherDetail = UILabel()
         weatherDetail.text = detail
+        weatherDetail.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        weatherDetail.textColor = .white
         
         let divider: UILabel = {
             let label = UILabel()
             label.text = "|"
+            label.textColor = .white
             return label
         }()
         
@@ -44,20 +52,28 @@ class WeatherDetailsView: UIView {
            let stackView = UIStackView()
             stackView.axis = .horizontal
             stackView.spacing = 5
-            stackView.alignment = .center
-            
+            stackView.alignment = .leading
+            stackView.distribution = .fillProportionally
             return stackView
         }()
         
         horizontalStackView.addArrangedSubview(weatherIcon)
         horizontalStackView.addArrangedSubview(weatherLabel)
-        horizontalStackView.addArrangedSubview(divider)
-        horizontalStackView.addArrangedSubview(weatherDetail)
-        
+        addSubview(divider)
         addSubview(horizontalStackView)
+        addSubview(weatherDetail)
         
-        horizontalStackView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+        divider.snp.makeConstraints { make in
+            make.centerX.centerY.equalToSuperview()
         }
+        weatherDetail.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.leading.equalTo(divider.snp.centerX).offset(15)
+        }
+        horizontalStackView.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.trailing.equalTo(divider.snp.centerX).offset(-15)
+        }
+        
     }
 }

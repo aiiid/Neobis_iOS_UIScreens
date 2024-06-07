@@ -33,7 +33,7 @@ class WeatherCardView: UIView {
            let stackView = UIStackView()
             stackView.axis = .vertical
             stackView.alignment = .center
-            stackView.distribution = .equalSpacing
+            stackView.distribution = .fillProportionally
             
             return stackView
         }()

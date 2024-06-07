@@ -12,11 +12,9 @@ class WeatherAppViewController: UIViewController {
     }
     
     private func configureUI() {
-        setupGradientBackground()
+        setupBackground()
         let weatherCardView = WeatherCardView()
         let weatherImage = UIImageView(image: UIImage(named: "sun.png"))
-        let line1 = UIImageView(image: UIImage(named: "line1.png"))
-        let line2 = UIImageView(image: UIImage(named: "line2.png"))
         
         weatherForecastButton.setTitle("Прогноз на неделю", for: .normal)
         weatherForecastButton.setTitleColor(UIColor(hex: "444E72"), for: .normal)
@@ -34,19 +32,7 @@ class WeatherAppViewController: UIViewController {
         
         view.addSubview(weatherImage)
         view.addSubview(weatherCardView)
-        view.addSubview(line1)
-        view.addSubview(line2)
         view.addSubview(weatherForecastButton)
-        
-        line1.snp.makeConstraints { make in
-            make.trailing.equalToSuperview()
-            make.top.equalToSuperview().offset(30)
-        }
-        
-        line2.snp.makeConstraints { make in
-            make.leading.equalToSuperview()
-            make.top.equalToSuperview().offset(110)
-        }
         
         weatherImage.snp.makeConstraints { make in
             make.height.width.equalTo(200)
@@ -56,7 +42,7 @@ class WeatherAppViewController: UIViewController {
         
         weatherCardView.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalTo(weatherImage.snp.bottom).offset(25)
+            make.top.equalTo(weatherImage.snp.bottom).offset(15)
             make.width.equalTo(353)
             make.height.equalTo(335)
         }
@@ -68,13 +54,12 @@ class WeatherAppViewController: UIViewController {
             make.height.equalTo(64)
         }
     }
-
+    
     private func configureNavigationBar() {
         // Left icon
         let leftIcon = UIButton(type: .system)
         leftIcon.setImage(UIImage(named: "mapPin.png"), for: .normal)
         leftIcon.tintColor = .white
-        leftIcon.addTarget(self, action: #selector(leftIconTapped), for: .touchUpInside)
         
         // Title button
         let titleButton = UIButton(type: .system)
@@ -87,9 +72,8 @@ class WeatherAppViewController: UIViewController {
         chevronIcon.contentMode = .scaleAspectFit
         
         titleButton.tintColor = .white
-        titleButton.addTarget(self, action: #selector(titleTapped), for: .touchUpInside)
         titleButton.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .medium)
-               
+        
         // Stack view to hold the left icon and title button
         let stackView = UIStackView(arrangedSubviews: [leftIcon, titleButton, chevronIcon])
         stackView.axis = .horizontal
@@ -112,35 +96,48 @@ class WeatherAppViewController: UIViewController {
             image: UIImage(named: "notification.png"),
             style: .plain,
             target: self,
-            action: #selector(rightIconTapped)
+            action: nil
         )
         rightIcon.tintColor = .white
         navigationItem.rightBarButtonItem = rightIcon
+        
+        // Back button settings
+        navigationItem.backButtonTitle = "Назад"
+        
+        // Change the navigation bar's tint color to white
+        navigationController?.navigationBar.tintColor = .white
     }
     
-    private func setupGradientBackground() {
-          let gradientLayer = CAGradientLayer()
-          gradientLayer.colors = [UIColor(hex: "#47BFDF").cgColor, UIColor(hex: "#4A91FF").cgColor]
-          gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
-          gradientLayer.endPoint = CGPoint(x: 0.0, y: 1.0)
-          gradientLayer.frame = view.bounds
-          
-          view.layer.insertSublayer(gradientLayer, at: 0)
-      }
-
-    @objc private func leftIconTapped() {
-        print("Left icon tapped")
-    }
-
-    @objc private func rightIconTapped() {
-        print("Right icon tapped")
-    }
-
-    @objc private func titleTapped() {
-        print("Title tapped")
+    private func setupBackground() {
+        // Setup gradient background
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [UIColor(hex: "#47BFDF").cgColor, UIColor(hex: "#4A91FF").cgColor]
+        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
+        gradientLayer.endPoint = CGPoint(x: 0.0, y: 1.0)
+        gradientLayer.frame = view.bounds
+        
+        view.layer.insertSublayer(gradientLayer, at: 0)
+        
+        // Setup background lines
+        let line1 = UIImageView(image: UIImage(named: "line1.png"))
+        let line2 = UIImageView(image: UIImage(named: "line2.png"))
+        
+        view.addSubview(line1)
+        view.addSubview(line2)
+        
+        line1.snp.makeConstraints { make in
+            make.trailing.equalToSuperview()
+            make.top.equalToSuperview().offset(30)
+        }
+        
+        line2.snp.makeConstraints { make in
+            make.leading.equalToSuperview()
+            make.top.equalToSuperview().offset(110)
+        }
     }
     
-    @objc private func weatherForecastPressed(){
+    @objc private func weatherForecastPressed() {
         print("open vc")
+        navigationController?.pushViewController(WeatherDetailsViewController(), animated: true)
     }
 }

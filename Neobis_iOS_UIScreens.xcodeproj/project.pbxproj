@@ -28,6 +28,14 @@
 		E24A60A82C11F58C00A51FBC /* WeatherCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24A60A72C11F58C00A51FBC /* WeatherCardView.swift */; };
 		E24A60AA2C11F94F00A51FBC /* WeatherDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24A60A92C11F94F00A51FBC /* WeatherDetailsView.swift */; };
 		E24A60AC2C11FA3F00A51FBC /* WeatherState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24A60AB2C11FA3F00A51FBC /* WeatherState.swift */; };
+		E26FE2B42C12D44100DA10FA /* WeatherDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26FE2B32C12D44100DA10FA /* WeatherDetailsViewController.swift */; };
+		E26FE2B72C12DA2800DA10FA /* AppLayouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26FE2B62C12DA2800DA10FA /* AppLayouts.swift */; };
+		E26FE2B92C12DC6D00DA10FA /* WeatherCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26FE2B82C12DC6D00DA10FA /* WeatherCardCollectionViewCell.swift */; };
+		E26FE2BB2C12E85F00DA10FA /* WeatherDayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26FE2BA2C12E85F00DA10FA /* WeatherDayModel.swift */; };
+		E26FE2C02C12F65200DA10FA /* TodaysHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26FE2BF2C12F65200DA10FA /* TodaysHeaderView.swift */; };
+		E26FE2C22C131AEA00DA10FA /* WeatherWeekCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26FE2C12C131AEA00DA10FA /* WeatherWeekCollectionViewCell.swift */; };
+		E26FE2C42C131BC000DA10FA /* WeekHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26FE2C32C131BC000DA10FA /* WeekHeaderView.swift */; };
+		E26FE2C62C131E2700DA10FA /* WeatherWeekModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26FE2C52C131E2700DA10FA /* WeatherWeekModel.swift */; };
 		E2901D012C083DB8008A0438 /* PortfolioAssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2901D002C083DB8008A0438 /* PortfolioAssetCell.swift */; };
 		E2901D032C0C5A32008A0438 /* PortfolioTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2901D022C0C5A32008A0438 /* PortfolioTableView.swift */; };
 		E2901D052C0C5D6C008A0438 /* CryptoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2901D042C0C5D6C008A0438 /* CryptoAsset.swift */; };
@@ -62,6 +70,14 @@
 		E24A60A72C11F58C00A51FBC /* WeatherCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCardView.swift; sourceTree = "<group>"; };
 		E24A60A92C11F94F00A51FBC /* WeatherDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsView.swift; sourceTree = "<group>"; };
 		E24A60AB2C11FA3F00A51FBC /* WeatherState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherState.swift; sourceTree = "<group>"; };
+		E26FE2B32C12D44100DA10FA /* WeatherDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsViewController.swift; sourceTree = "<group>"; };
+		E26FE2B62C12DA2800DA10FA /* AppLayouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLayouts.swift; sourceTree = "<group>"; };
+		E26FE2B82C12DC6D00DA10FA /* WeatherCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		E26FE2BA2C12E85F00DA10FA /* WeatherDayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayModel.swift; sourceTree = "<group>"; };
+		E26FE2BF2C12F65200DA10FA /* TodaysHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysHeaderView.swift; sourceTree = "<group>"; };
+		E26FE2C12C131AEA00DA10FA /* WeatherWeekCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWeekCollectionViewCell.swift; sourceTree = "<group>"; };
+		E26FE2C32C131BC000DA10FA /* WeekHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekHeaderView.swift; sourceTree = "<group>"; };
+		E26FE2C52C131E2700DA10FA /* WeatherWeekModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWeekModel.swift; sourceTree = "<group>"; };
 		E2901D002C083DB8008A0438 /* PortfolioAssetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioAssetCell.swift; sourceTree = "<group>"; };
 		E2901D022C0C5A32008A0438 /* PortfolioTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioTableView.swift; sourceTree = "<group>"; };
 		E2901D042C0C5D6C008A0438 /* CryptoAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAsset.swift; sourceTree = "<group>"; };
@@ -120,9 +136,10 @@
 		E238F6882BFF6F7400A169D5 /* Neobis_iOS_UIScreens */ = {
 			isa = PBXGroup;
 			children = (
+				E26FE2B52C12DA1500DA10FA /* Model */,
 				E2901D062C0CD9AD008A0438 /* Utilities */,
 				E238F6B42C07371800A169D5 /* DataManager */,
-				E238F69F2C05B3FC00A169D5 /* Custom */,
+				E238F69F2C05B3FC00A169D5 /* Views */,
 				E238F6892BFF6F7400A169D5 /* AppDelegate.swift */,
 				E238F68B2BFF6F7400A169D5 /* SceneDelegate.swift */,
 				E238F68D2BFF6F7400A169D5 /* ViewController.swift */,
@@ -133,16 +150,17 @@
 			path = Neobis_iOS_UIScreens;
 			sourceTree = "<group>";
 		};
-		E238F69F2C05B3FC00A169D5 /* Custom */ = {
+		E238F69F2C05B3FC00A169D5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E26FE2BC2C12F50D00DA10FA /* Header */,
 				E238F6B72C079EB200A169D5 /* Container */,
 				E238F6B12C0736AE00A169D5 /* Cell */,
 				E238F6AE2C07369800A169D5 /* TableView */,
 				E238F6A12C05B40C00A169D5 /* ViewController */,
 				E238F6A02C05B40400A169D5 /* TabBarController */,
 			);
-			path = Custom;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		E238F6A02C05B40400A169D5 /* TabBarController */ = {
@@ -161,6 +179,7 @@
 				E238F6A62C05B49800A169D5 /* PortfolioViewController.swift */,
 				E238F6A82C05B5F300A169D5 /* WalletViewController.swift */,
 				E238F6AA2C05B60100A169D5 /* WeatherAppViewController.swift */,
+				E26FE2B32C12D44100DA10FA /* WeatherDetailsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -181,6 +200,8 @@
 				E238F6B22C0736BF00A169D5 /* SinglesTableViewCell.swift */,
 				E238F6BD2C07A57F00A169D5 /* CountryTableViewCell.swift */,
 				E2901D002C083DB8008A0438 /* PortfolioAssetCell.swift */,
+				E26FE2B82C12DC6D00DA10FA /* WeatherCardCollectionViewCell.swift */,
+				E26FE2C12C131AEA00DA10FA /* WeatherWeekCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -198,13 +219,32 @@
 		E238F6B72C079EB200A169D5 /* Container */ = {
 			isa = PBXGroup;
 			children = (
-				E238F6BA2C07A2CC00A169D5 /* TravelHeaderView.swift */,
-				E2901D092C0CE586008A0438 /* WalletHeaderView.swift */,
 				E2901D0B2C10C55A008A0438 /* MonthView.swift */,
 				E24A60A72C11F58C00A51FBC /* WeatherCardView.swift */,
 				E24A60A92C11F94F00A51FBC /* WeatherDetailsView.swift */,
 			);
 			path = Container;
+			sourceTree = "<group>";
+		};
+		E26FE2B52C12DA1500DA10FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E26FE2B62C12DA2800DA10FA /* AppLayouts.swift */,
+				E26FE2BA2C12E85F00DA10FA /* WeatherDayModel.swift */,
+				E26FE2C52C131E2700DA10FA /* WeatherWeekModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E26FE2BC2C12F50D00DA10FA /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				E238F6BA2C07A2CC00A169D5 /* TravelHeaderView.swift */,
+				E2901D092C0CE586008A0438 /* WalletHeaderView.swift */,
+				E26FE2BF2C12F65200DA10FA /* TodaysHeaderView.swift */,
+				E26FE2C32C131BC000DA10FA /* WeekHeaderView.swift */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		E2901D062C0CD9AD008A0438 /* Utilities */ = {
@@ -351,18 +391,24 @@
 				E238F68E2BFF6F7400A169D5 /* ViewController.swift in Sources */,
 				E2901D032C0C5A32008A0438 /* PortfolioTableView.swift in Sources */,
 				E2901D012C083DB8008A0438 /* PortfolioAssetCell.swift in Sources */,
+				E26FE2C22C131AEA00DA10FA /* WeatherWeekCollectionViewCell.swift in Sources */,
+				E26FE2C02C12F65200DA10FA /* TodaysHeaderView.swift in Sources */,
 				E238F6B02C0736AA00A169D5 /* SinglesTableViewController.swift in Sources */,
 				E238F6B32C0736BF00A169D5 /* SinglesTableViewCell.swift in Sources */,
 				E238F68A2BFF6F7400A169D5 /* AppDelegate.swift in Sources */,
+				E26FE2BB2C12E85F00DA10FA /* WeatherDayModel.swift in Sources */,
 				E238F6A32C05B46B00A169D5 /* SinglesViewController.swift in Sources */,
 				E2901D052C0C5D6C008A0438 /* CryptoAsset.swift in Sources */,
 				E24A60AA2C11F94F00A51FBC /* WeatherDetailsView.swift in Sources */,
 				E238F68C2BFF6F7400A169D5 /* SceneDelegate.swift in Sources */,
+				E26FE2B72C12DA2800DA10FA /* AppLayouts.swift in Sources */,
+				E26FE2B42C12D44100DA10FA /* WeatherDetailsViewController.swift in Sources */,
 				E238F6A92C05B5F300A169D5 /* WalletViewController.swift in Sources */,
 				E24A60A82C11F58C00A51FBC /* WeatherCardView.swift in Sources */,
 				E238F6BB2C07A2CC00A169D5 /* TravelHeaderView.swift in Sources */,
 				E24A60AC2C11FA3F00A51FBC /* WeatherState.swift in Sources */,
 				E238F6A72C05B49800A169D5 /* PortfolioViewController.swift in Sources */,
+				E26FE2C42C131BC000DA10FA /* WeekHeaderView.swift in Sources */,
 				E238F6AB2C05B60100A169D5 /* WeatherAppViewController.swift in Sources */,
 				E2901D0C2C10C55A008A0438 /* MonthView.swift in Sources */,
 				E2901D0A2C0CE586008A0438 /* WalletHeaderView.swift in Sources */,
@@ -370,6 +416,8 @@
 				E2901D082C0CD9BA008A0438 /* Extensions.swift in Sources */,
 				E238F6BE2C07A57F00A169D5 /* CountryTableViewCell.swift in Sources */,
 				E238F6C02C07A6CB00A169D5 /* CountriesTableViewController.swift in Sources */,
+				E26FE2B92C12DC6D00DA10FA /* WeatherCardCollectionViewCell.swift in Sources */,
+				E26FE2C62C131E2700DA10FA /* WeatherWeekModel.swift in Sources */,
 				E238F6B62C07373600A169D5 /* SinglesContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

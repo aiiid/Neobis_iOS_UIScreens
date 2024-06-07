@@ -14,7 +14,7 @@ class WeatherWeekCollectionViewCell: UICollectionViewCell {
     var cellData: WeatherWeekModel? {
         didSet {
             guard let cellData = cellData else { return }
-            weatherIcon.image = UIImage(systemName: cellData.icon)
+            weatherIcon.image = UIImage(named: cellData.icon)
             degreeLabel.text = cellData.degree
             dayLabel.text = cellData.day
         }
@@ -30,13 +30,16 @@ class WeatherWeekCollectionViewCell: UICollectionViewCell {
     
     private var degreeLabel: UILabel = {
         let label = UILabel()
-        label.textAlignment = .center
+        label.textAlignment = .left
+        label.textColor = .white
         return label
     }()
     
     private var dayLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
+        label.font = .systemFont(ofSize: 18, weight: .semibold)
+        label.textColor = .white
         return label
     }()
     
@@ -58,15 +61,15 @@ class WeatherWeekCollectionViewCell: UICollectionViewCell {
             return stackView
         }()
         
-        horizontalStackView.addArrangedSubview(degreeLabel)
-        horizontalStackView.addArrangedSubview(weatherIcon)
         horizontalStackView.addArrangedSubview(dayLabel)
+        horizontalStackView.addArrangedSubview(weatherIcon)
+        horizontalStackView.addArrangedSubview(degreeLabel)
         
         addSubview(horizontalStackView)
         
         weatherIcon.snp.makeConstraints { make in
             make.centerX.centerY.equalToSuperview()
-            make.width.height.equalTo(37)
+            make.width.height.equalTo(45)
         }
         
         horizontalStackView.snp.makeConstraints { make in

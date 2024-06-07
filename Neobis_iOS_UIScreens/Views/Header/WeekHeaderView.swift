@@ -8,12 +8,12 @@
 import UIKit
 
 class WeekHeaderView: UICollectionReusableView {
-    static let headerIdentifier = "TodaysHeaderView"
+    static let headerIdentifier = "WeekHeaderView"
     
     private var todayLabel : UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .label
+        label.textColor = .white
         label.text = "This week"
         label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
         return label
@@ -21,7 +21,6 @@ class WeekHeaderView: UICollectionReusableView {
     
     private var iconImage = UIImageView(image: UIImage(named: "calendar.png"))
 
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureUI()
@@ -31,8 +30,8 @@ class WeekHeaderView: UICollectionReusableView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func configureUI(){
-        [todayLabel, iconImage].forEach{addSubview($0)}
+    private func configureUI() {
+        [todayLabel, iconImage].forEach{ addSubview($0)}
         
         todayLabel.snp.makeConstraints { make in
             make.leading.equalToSuperview()

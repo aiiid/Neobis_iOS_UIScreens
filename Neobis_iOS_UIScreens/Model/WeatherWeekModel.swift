@@ -14,11 +14,11 @@ struct WeatherWeekModel {
 }
 
 let weatherWeekMockData = [
-    WeatherWeekModel(day: "Апр, 27", icon: "cloud", degree: "16°C"),
-    WeatherWeekModel(day: "Апр, 28", icon: "cloud.bolt", degree: "19°C"),
-    WeatherWeekModel(day: "Апр, 29", icon: "cloud.sun.rain", degree: "23°C"),
-    WeatherWeekModel(day: "Апр, 30", icon: "cloud.sun", degree: "21°C"),
-    WeatherWeekModel(day: "Май, 1", icon: "cloud.rainbow.half", degree: "22°C"),
-    WeatherWeekModel(day: "Май, 2", icon: "cloud.sun", degree: "23°C"),
-    WeatherWeekModel(day: "Май, 3", icon: "sun.min", degree: "25°C")
+    WeatherWeekModel(day: "Апр, 27", icon: weatherIcons.randomElement()!, degree: "16°C"),
+    WeatherWeekModel(day: "Апр, 28", icon: weatherIcons.randomElement()!, degree: "19°C"),
+    WeatherWeekModel(day: "Апр, 29", icon: weatherIcons.randomElement()!, degree: "23°C"),
+    WeatherWeekModel(day: "Апр, 30", icon: weatherIcons.randomElement()!, degree: "21°C"),
+    WeatherWeekModel(day: "Май, 1", icon: weatherIcons.randomElement()!, degree: "22°C"),
+    WeatherWeekModel(day: "Май, 2", icon: weatherIcons.randomElement()!, degree: "23°C"),
+    WeatherWeekModel(day: "Май, 3", icon: weatherIcons.randomElement()!, degree: "25°C")
 ]

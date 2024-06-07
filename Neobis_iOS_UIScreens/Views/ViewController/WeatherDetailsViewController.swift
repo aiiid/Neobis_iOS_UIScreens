@@ -10,11 +10,11 @@ import SnapKit
 
 class WeatherDetailsViewController: UIViewController {
     lazy var scrollView: UIScrollView = {
-            let scrollView = UIScrollView()
-            scrollView.showsVerticalScrollIndicator = true
-            scrollView.showsHorizontalScrollIndicator = false
-            return scrollView
-        }()
+        let scrollView = UIScrollView()
+        scrollView.showsVerticalScrollIndicator = true
+        scrollView.showsHorizontalScrollIndicator = false
+        return scrollView
+    }()
     
     lazy var collectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
@@ -32,8 +32,12 @@ class WeatherDetailsViewController: UIViewController {
             forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
             withReuseIdentifier: TodaysHeaderView.headerIdentifier
         )
-        
-        collectionView.backgroundColor = .systemPink
+        collectionView.register(
+            WeekHeaderView.self,
+            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+            withReuseIdentifier: WeekHeaderView.headerIdentifier
+        )
+        collectionView.backgroundColor = .clear
         collectionView.isScrollEnabled = true
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -50,16 +54,16 @@ class WeatherDetailsViewController: UIViewController {
         setupBackground()
         view.addSubview(scrollView)
         scrollView.addSubview(collectionView)
-
+        
         configureCompositionalLayout()
         
         scrollView.snp.makeConstraints { make in
-                   make.edges.equalToSuperview()
-               }
+            make.edges.equalToSuperview()
+        }
         
         collectionView.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalTo(view.safeAreaLayoutGuide)
+            make.top.equalTo(view.safeAreaLayoutGuide).offset(30)
             make.leading.trailing.equalToSuperview().inset(10)
             make.bottom.equalTo(view.safeAreaLayoutGuide)
         }
@@ -165,15 +169,28 @@ extension WeatherDetailsViewController: UICollectionViewDataSource, UICollection
     // Header view
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         if kind == UICollectionView.elementKindSectionHeader {
-            guard let header = collectionView.dequeueReusableSupplementaryView(
-                ofKind: kind,
-                withReuseIdentifier: TodaysHeaderView.headerIdentifier,
-                for: indexPath
-            ) as? TodaysHeaderView else {
+            switch indexPath.section {
+            case 0:
+                guard let header = collectionView.dequeueReusableSupplementaryView(
+                    ofKind: kind,
+                    withReuseIdentifier: TodaysHeaderView.headerIdentifier,
+                    for: indexPath
+                ) as? TodaysHeaderView else {
+                    return UICollectionReusableView()
+                }
+                return header
+            case 1:
+                guard let header = collectionView.dequeueReusableSupplementaryView(
+                    ofKind: kind,
+                    withReuseIdentifier: WeekHeaderView.headerIdentifier,
+                    for: indexPath
+                ) as? WeekHeaderView else {
+                    return UICollectionReusableView()
+                }
+                return header
+            default:
                 return UICollectionReusableView()
             }
-            // Configure your header view here
-            return header
         }
         return UICollectionReusableView()
     }

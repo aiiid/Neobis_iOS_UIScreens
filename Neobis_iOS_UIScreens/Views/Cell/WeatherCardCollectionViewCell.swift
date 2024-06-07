@@ -15,7 +15,7 @@ class WeatherCardCollectionViewCell: UICollectionViewCell {
     var cellData: WeatherDayModel? {
         didSet {
             guard let cellData = cellData else { return }
-            weatherIcon.image = UIImage(systemName: cellData.icon)
+            weatherIcon.image = UIImage(named: cellData.icon)
             degreeLabel.text = cellData.degree
             timeLabel.text = cellData.time
         }
@@ -32,12 +32,14 @@ class WeatherCardCollectionViewCell: UICollectionViewCell {
     private var degreeLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
+        label.textColor = .white
         return label
     }()
     
     private var timeLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
+        label.textColor = .white
         return label
     }()
     
@@ -67,7 +69,7 @@ class WeatherCardCollectionViewCell: UICollectionViewCell {
         
         weatherIcon.snp.makeConstraints { make in
             make.centerX.centerY.equalToSuperview()
-            make.width.height.equalTo(37)
+            make.width.height.equalTo(40)
         }
         
         verticalStackView.snp.makeConstraints { make in

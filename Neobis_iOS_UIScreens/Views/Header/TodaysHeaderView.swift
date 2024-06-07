@@ -13,7 +13,7 @@ class TodaysHeaderView: UICollectionReusableView {
     private var todayLabel : UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .label
+        label.textColor = .white
         label.text = "Today"
         label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
         return label
@@ -22,7 +22,7 @@ class TodaysHeaderView: UICollectionReusableView {
     private var dateLabel : UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .label
+        label.textColor = .white
         label.text = "Apr, 26"
         label.font = UIFont.systemFont(ofSize: 18, weight: .regular)
         return label
